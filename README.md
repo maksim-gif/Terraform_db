@@ -26,8 +26,10 @@ cat > README.md << 'EOF'
 ```
 terraform init
 terraform apply -var="username=ваш_email" -var="password=ваш_пароль" -var="project_id=ваш_project_id"
-2. Заполнение тестовыми данными:
-bash
+```
+### 2. Заполнение тестовыми данными:
+
+```
 python3 populate_database.py \\
   $(terraform output -raw mysql_host_internal) \\
   "app_user" \\
@@ -46,10 +48,6 @@ populate_database.py - Скрипт генерации тестовых данн
 .gitignore - Игнорируемые файлы
 
 📋 Требования
-Terraform >= 1.0
-
-Аккаунт VK Cloud
-
 Python 3.x с mysql-connector-python
 
 🎯 Результаты развертывания
