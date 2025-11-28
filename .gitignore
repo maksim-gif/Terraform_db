@@ -1,0 +1,22 @@
+# Terraform files
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.terraform.tfstate.lock.info
+
+# Virtual environment
+myenv/
+.env
+
+# Sensitive data
+*.pem
+*.key
+*.cert
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
